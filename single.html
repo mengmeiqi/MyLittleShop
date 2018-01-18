@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>single</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/single.css"/>
+</head>
+<body>
+    <div id="header">
+        <div class="wrapper">
+            <div id="header_begin">
+                <div class="header_log"><a href="#">登录</a></div>
+                <div class="header_my"><h1>我的小店</h1></div>
+                <div class="header_cart">
+                    <div class="cart_count">
+                        <span>购物车：$0.00(0件)</span>
+                        <img src="img/cart.png" alt="cart"/>
+                    </div>
+                    <div class="cart_clear">清空购物车</div>
+                </div>
+            </div>
+            <ul id="nav">
+                <li class="nav_li"><a href="#">首页</a></li>
+                <li class="makeup nav_li"><a href="#">美妆商城</a>
+                    <div id="submenu">
+                        <div class="submenu_intro">
+                            <p>护肤</p>
+                            <ul>
+                                <li><a href="#">洁面</a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">面霜</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu_intro">
+                            <p>彩妆</p>
+                            <ul>
+                                <li><a href="#">底妆</a></li>
+                                <li><a href="#">眼妆</a></li>
+                                <li><a href="#">唇妆</a></li>
+                                <li><a href="#">卸妆</a></li>
+                                <li><a href="#">美妆工具</a></li>
+                                <li><a href="#">套装</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu_intro">
+                            <p>香水</p>
+                            <ul>
+                                <li><a href="#">女士香水</a></li>
+                                <li><a href="#">男士香水</a></li>
+                                <li><a href="#">中性香水</a></li>
+                                <li><a href="#">Q版香水</a></li>
+                                <li><a href="#">香水套装</a></li>
+                                <li><a href="#">精油</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu_intro">
+                            <p>男士护理</p>
+                            <ul>
+                                <li><a href="#">面部护理</a></li>
+                                <li><a href="#">身体护理</a></li>
+                                <li><a href="#">护理套装</a></li>
+                                <li><a href="#">洁面</a></li>
+                                <li><a href="#">爽肤水</a></li>
+                                <li><a href="#">男士洗护</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu_intro">
+                            <p>个人护理</p>
+                            <ul>
+                                <li><a href="#">秀发护理</a></li>
+                                <li><a href="#">身体护理</a></li>
+                                <li><a href="#">纤体</a></li>
+                                <li><a href="#">手足护理</a></li>
+                                <li><a href="#">卫生巾</a></li>
+                                <li><a href="#">口腔护理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li  class="nav_li"><a href="#">特卖专场</a></li>
+                <li  class="nav_li"><a href="#">新品上市</a></li>
+                <li  class="nav_li"><a href="#">潮人推荐</a></li>
+                <li  class="nav_li"><a href="#">进口免税店</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="single">
+        <div class="wrapper">
+            <div id="single-pic" class="float">
+                <div class="big-pic" id="big">
+                    <img src="img/s1.jpg" alt=""/>
+                </div>
+                <div class="small-pic" id="small">
+                    <img class="selected" src="img/s1.jpg" alt=""/>
+                    <img src="img/s2.jpg" alt=""/>
+                    <img src="img/s3.jpg" alt=""/>
+                    <img src="img/s4.jpg" alt=""/>
+                </div>
+                <span id="single-left" class="single-arrow">&lt</span>
+                <span id="single-right" class="single-arrow">&gt</span>
+                <div id="drag"></div>
+                <div id="mask"></div>
+            </div>
+            <div id="magnify">
+                <img src="img/s1.jpg" alt=""/>
+            </div>
+            <div id="single-description" class="float">
+                <div class="single-description-title">
+                    <h3>CHICCA魅惑唇膏</h3>
+                    <h4>最滋润的口红</h4>
+                    <p>￥<span id="single-description-price">450</span></p>
+                    <div >数量</div><input id="single-title-num"  value="1" type="text"/>
+                    <br/>
+                    <button>添加到购物车</button>
+                </div>
+                <div class="single-description-style">
+                    <p class="single-description-ss"><span class="single-head">类型:</span><span class="single-charac">唇妆</span></p>
+                    <p class="single-description-ss"><span class="single-head">品牌::</span><span class="single-charac">CHICCA</span></p>
+                </div>
+                <div class="single-description-footer">
+                    <p class="single-description-footer-p1">详细描述：</p>
+                    <p class="single-description-footer-p2">CHICCA是意大利米兰人对"可爱"的昵称，该品牌的构思是"打造出日本女士恋爱中的眼神"，目标客户是当今大都市中具有时尚感的50岁至60岁的老年女性。该品牌共推出了包括护肤、彩妆和化妆工具在内的166种商品，售价在1050-36750日元不等(约合人民币79元～2768元)。卖点已不仅仅是遮盖皱纹，关注的是如何更显漂亮。 随着日本国内化妆品市场日趋饱和，几大化妆品公司之间的"市场争夺战"越来越激烈。佳丽宝因此将目光转向那些生活在大都市，紧跟时尚潮流，并且孜孜不倦地追求美的新一代老年女性，专门开发新品牌，满足她们对抗老化保养的需求。中老年化妆品大有市场。 佳丽宝此前曾表示，将通过强力打造旗下品牌的战略，在日本已近饱和的化妆品市场争夺更大份额。该公司计划到2010年，将旗下年销售额超过100亿日元的品牌由目前的6个增至12个</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dependence">
+        <div class="wrapper">
+            <h4>&nbsp&nbsp&nbsp相关产品</h4>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="wrapper">
+
+        </div>
+    </div>
+    <script src="javascript/wichuang-1.0.js"></script>
+    <script src="javascript/single.js"></script>
+</body>
+</html>

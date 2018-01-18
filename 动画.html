@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        #div1{
+            background: #00ff00;
+            height:200px;
+            width:200px;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">开关</button>
+    <div id="div1"></div>
+    <script src="javascript/wichuang-1.0.js"></script>
+    <script>
+        var oBtn = document.getElementById("btn");
+        var oDiv1 = document.getElementById("div1");
+        /*oBtn.onclick = function(){
+            var time = setInterval(function(){
+                oDiv1.style.left = oDiv1.offsetLeft + 10 + "px";
+                if(oDiv1.offsetLeft >= 500){
+                    oDiv1.style.left = 0;
+                    clearInterval(time);
+                }
+            },100);
+        }*/
+        oBtn.onclick = function(){
+            animate(oDiv1,{
+                top:400
+            },function(){
+                animate(oDiv1,{
+                    left:400
+                });
+            });
+        };
+    </script>
+</body>
+</html>
